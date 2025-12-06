@@ -1,0 +1,281 @@
+/* -----------------------------------------------
+  GLOBAL TYPOGRAPHY
+------------------------------------------------ */
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--overall-bg-color);
+  font-family: var(--body-font);
+  color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+  color: var(--header-color) !important;
+  font-weight: bold;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+a:link {
+  color: var(--a-link-color);
+}
+a:visited {
+  color: var(--a-visited-color);
+}
+a:hover {
+  color: var(--a-hover-color);
+}
+a:active {
+  color: var(--a-active-color);
+}
+
+a {
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+h1 {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+/* -----------------------------------------------
+  BACKGROUND COLORS
+------------------------------------------------ */
+.bg-primary {
+  background-color: var(--body-bg-primary) !important;
+}
+.bg-alternate {
+  background-color: var(--body-bg-light) !important;
+}
+
+/* -----------------------------------------------
+  Layout
+------------------------------------------------ */
+section {
+  padding: 3rem;
+}
+
+/* make container wider before it clamps */
+.my-wide-container {
+  width: 100 percent; /* FULL WIDTH ALWAYS */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; /* wrapper should NOT add gutters */
+  padding-right: 0;
+  background-color: black; /* your desired gutter color */
+}
+
+/* Below 1920px: FORCE no max-width */
+@media (max-width: 1919px) {
+  .my-wide-container {
+    max-width: none !important; /* THIS fixes your issue */
+  }
+}
+
+/* Your custom widths above 1920px */
+@media (min-width: 1920px) {
+  .my-wide-container {
+    max-width: 1800px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .my-wide-container {
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .my-wide-container {
+    max-width: 2200px;
+  }
+}
+
+/* -----------------------------------------------
+  NAVBAR
+------------------------------------------------ */
+#navbar-spacer {
+  /* height: var(--navbar-height); */
+  width: 100%;
+}
+
+nav,
+a.navbar-brand,
+.nav-item .nav-link {
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--navbar-color-active) !important;
+}
+
+.navbar-brand {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.9rem, 5vw, 1.25rem);
+  white-space: nowrap;
+}
+
+.brand-logo {
+  height: 100%;
+  max-height: 40px;
+  width: auto;
+  user-select: none;
+}
+
+/* shrink the button hitbox */
+.navbar-toggler {
+  line-height: 1;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22 M4 15h22 M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* shrink the icon inside */
+.navbar-toggler-icon {
+  width: 18px; /* default ~24px */
+  height: 18px; /* default ~24px */
+  background-size: 18px 18px;
+}
+
+/* -----------------------------------------------
+  SLIDESHOW
+------------------------------------------------ */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* optional */
+  margin: 0 auto;
+  /* keeps height consistent, responsive */
+  aspect-ratio: 3 / 2;
+  /* If you do not want aspect ratio, you can use: */
+  max-height: 650px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  background-color: #333333;
+}
+
+.slideshow-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.slide-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+}
+.slide-btn.left {
+  left: 10px;
+}
+.slide-btn.right {
+  right: 10px;
+}
+
+/* -----------------------------------------------
+  BANNER HEADER
+------------------------------------------------ */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-color);
+}
+
+/* -----------------------------------------------
+  IMAGE SPACING
+------------------------------------------------ */
+.image-col {
+  display: flex;
+  align-items: center;
+}
+
+.side-img {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: center;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-left {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: left;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-right {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: right;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.shadow-bold {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9) !important;
+}
+
+.shadow-orange {
+  box-shadow: 0 10px 25px rgba(239, 64, 54, 0.45) !important; /* #ef4036 */
+}
+
+.shadow-teal {
+  box-shadow: 0 10px 25px rgba(20, 131, 120, 0.45) !important; /* #148378 */
+}
+
+.shadow-yellow {
+  box-shadow: 0 10px 25px rgba(247, 245, 115, 0.35) !important; /* #f7f573 */
+}
+
+.shadow-retro {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+.shadow-depth {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(20, 131, 120, 0.35) !important;
+}
+
+/* -----------------------------------------------
+  ABOUT SECTION
+------------------------------------------------ */
+#about {
+  scroll-margin-top: 100px;
+  margin-top: 0;
+  padding-top: 0;
+}

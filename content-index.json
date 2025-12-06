@@ -1,0 +1,12 @@
+{
+  "sections": [
+    "about.md"
+  ],
+  "sections_new": [
+    "about.md",
+    "statement.md",
+    "experience.md",
+    "photography.md",
+    "personal.md"
+  ]
+}

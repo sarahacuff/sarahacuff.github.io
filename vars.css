@@ -1,0 +1,306 @@
+/* -----------------------------------------------
+  FONT IMPORTS
+------------------------------------------------ */
+/* Avenir LT Std */
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-LightOblique.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Book.otf") format("opentype");
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-BookOblique.otf") format("opentype");
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Roman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Oblique.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-MediumOblique.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-HeavyOblique.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("fonts/AvenirLTStd-BlackOblique.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Helvetica Regular */
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Helvetica Italic */
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Helvetica Light */
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Helvetica Bold */
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Helvetica Bold Italic */
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica-BoldOblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Helvetica Compressed (display face) */
+@font-face {
+  font-family: "HelveticaCompressed";
+  src: url("fonts/helvetica-compressed-5871d14b6903a.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Helvetica Rounded (display face) */
+@font-face {
+  font-family: "HelveticaRounded";
+  src: url("fonts/helvetica-rounded-bold-5871d05ead8de.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Aptos Regular (400) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Aptos Italic (400) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Aptos Light (300) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Aptos Light Italic (300) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Light-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Aptos SemiBold (600) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Aptos SemiBold Italic (600) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-SemiBold-Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Aptos Bold (700) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Aptos Bold Italic (700) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Bold-Italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Aptos ExtraBold (800) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Aptos ExtraBold Italic (800) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-ExtraBold-Italic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Aptos Black (900) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Aptos Black Italic (900) */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Black-Italic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ============================================
+   APTOS — Narrow (Condensed)
+   ============================================ */
+
+/* Aptos Narrow Regular (400) */
+@font-face {
+  font-family: "AptosNarrow";
+  src: url("fonts/Aptos-Narrow.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Aptos Narrow Italic (400) */
+@font-face {
+  font-family: "AptosNarrow";
+  src: url("fonts/Aptos-Narrow-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Aptos Narrow Bold (700) */
+@font-face {
+  font-family: "AptosNarrow";
+  src: url("fonts/Aptos-Narrow-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Aptos Narrow Bold Italic (700) */
+@font-face {
+  font-family: "AptosNarrow";
+  src: url("fonts/Aptos-Narrow-Bold-Italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* -----------------------------------------------
+  BRAND COLORS & FONTS
+------------------------------------------------ */
+:root {
+  --color-stone: #b7b3a1;
+  --color-sage: #d1ca98;
+  --color-sand: #edbf85;
+  --color-sunlight: #f7f06d;
+  --color-amber: #ffb140;
+
+  --header-font: "AptosNarrow", "Aptos", "AvenirLTStd", sans-serif;
+  --navbar-font: "AptosNarrow", "Aptos", "AvenirLTStd", sans-serif;
+  --body-font: "Helvetica", sans-serif;
+
+  --header-color: #454235;
+  --navbar-color: var(--color-sage);
+  --navbar-color-active: #ffffff;
+  --footer-color: var(--color-amber);
+  --body-color: #222222;
+  --a-link-color: #1e2a3a;
+  --a-hover-color: #5a3b1e;
+  --a-active-color: #5a3b1e;
+  --a-visited-color: #0b3c49;
+
+  --overall-bg-color: #000000;
+  --navbar-bg-color: #333333;
+  --footer-bg-color: #333333;
+  --body-bg-primary: var(--color-amber);
+  --body-bg-light: var(--color-sand);
+}
