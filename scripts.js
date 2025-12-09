@@ -74,6 +74,21 @@ function setupScrollSpy() {
   spy.refresh();
 }
 
+function setupResponsiveNavCollapse() {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  if (!navbarToggler) return;
+
+  const responsiveNavItems = document.querySelectorAll("#navbarResponsive .nav-link");
+
+  responsiveNavItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      if (window.getComputedStyle(navbarToggler).display !== "none") {
+        navbarToggler.click();
+      }
+    });
+  });
+}
+
 // single entry point that waits for DOM and sections
 async function init() {
   // wait for DOM if needed
@@ -86,8 +101,15 @@ async function init() {
 
   // now that all dynamic DOM is there, do the post work
   markExternalLinks();
-  updateNavbarSpacer();
-  setupScrollSpy();
+  setupResponsiveNavCollapse();
+
+  setTimeout(() => {
+    updateNavbarSpacer();
+    setupScrollSpy();
+  }, 0);
+
+  // updateNavbarSpacer();
+  // setupScrollSpy();
 
   // keep spacer correct on resize
   window.addEventListener("resize", updateNavbarSpacer);
