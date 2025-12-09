@@ -108,12 +108,11 @@ async function init() {
     setupScrollSpy();
   }, 0);
 
-  // updateNavbarSpacer();
-  // setupScrollSpy();
-
   // keep spacer correct on resize
   window.addEventListener("resize", updateNavbarSpacer);
 }
 
 // start
-init();
+document.addEventListener("DOMContentLoaded", function () {
+  init();
+});
