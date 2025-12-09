@@ -41,8 +41,7 @@ export async function renderSlideshow(sectionId) {
   // Load the image list
   const data = await fetch("photos-index.json").then((r) => r.json());
   const images = data.photos;
-  if (!images || images.length === 0)
-    return { html_slideshow: "", setup: () => {} };
+  if (!images || images.length === 0) return { html_slideshow: "", setup: () => {} };
 
   // Build HTML string (not applied to DOM)
   const html_slideshow = `
@@ -102,6 +101,96 @@ export async function renderMarkdown(sectionId, markdownUrl) {
       </div>
     `;
     setup();
+    return;
+  }
+
+  const academicProjects = `
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 m-auto">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAG6y0dcI1I/IfPAq5XfWtxWqXYJRMOlCQ/view?embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 col-md-10 m-auto">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGW89Agu_s/sBI5EpC18-DQ8MnR2Fn0Vw/view?embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-10 m-auto">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGU9mE7i84/90xbLDT8Cn2RJLyARaTDEQ/view?embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12 col-md-10 m-auto">
+        <img src="media/poster.jpg" loading="lazy" style="width: 100%; height: auto;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 250.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGce7xSyLk/PFUjDtMa7IncNEQwsr8rGg/watch?embed">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 250.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGtztOtATo/7CTjLGW9zcoZ4wvx88ubBQ/view?embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+    `;
+
+  if (sectionId == "academic-projects") {
+    section.innerHTML = `
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>${title}</h1>
+            ${html}
+            ${academicProjects}
+          </div>
+        </div>
+      </div>
+    `;
     return;
   }
 

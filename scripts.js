@@ -1,75 +1,103 @@
 import { renderMarkdown } from "./marky.js";
 
+// load all sections and nav items
 async function loadSections() {
   const index = await fetch("content-index.json").then((r) => r.json());
   const container = document.querySelector(".my-wide-container");
-  const nav = document.querySelector("#mainNav ul");
+  const navList = document.querySelector("#mainNav ul");
 
   for (const file of index.sections) {
-    const sectionId = file.replace(".md", "");
+    const sectionLabel = file.replace(".md", "");
+    const sectionId = sectionLabel
+      .replace(".md", "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
-    // Create <section> in DOM
     const section = document.createElement("section");
     section.id = sectionId;
     section.classList.add("dynamic-section");
     container.appendChild(section);
 
-    // Add to navbar
     const li = document.createElement("li");
     li.classList.add("nav-item");
-    li.innerHTML = `<a class="nav-link" href="#${sectionId}">${sectionId}</a>`;
-    nav.appendChild(li);
+    li.innerHTML = `<a class="nav-link" href="#${sectionId}">${sectionLabel}</a>`;
+    navList.appendChild(li);
 
-    // Render markdown into this section
+    // this does not return until the section HTML is inserted
     await renderMarkdown(sectionId, file);
   }
 }
 
-// document.addEventListener("DOMContentLoaded", async () => {
-//   await renderSlideshow("slideshow", "photos-index.json");
-// });
-
-window.addEventListener("DOMContentLoaded", async () => {
-  await loadSections();
-
-  // NOW refresh ScrollSpy
-  const scrollSpy = bootstrap.ScrollSpy.getInstance(document.body);
-  scrollSpy.refresh();
-});
-
-// Make external links open in a new tab
-document.addEventListener("DOMContentLoaded", function () {
+// add target blank to external links now that all content exists
+function markExternalLinks() {
   document.querySelectorAll("a[href]").forEach((a) => {
     const href = a.getAttribute("href");
+    if (!href) return;
 
-    // Skip anchors (#about, #fix, etc.)
+    // internal anchors
     if (href.startsWith("#")) return;
-
-    // Skip mailto:
+    // mail links
     if (href.startsWith("mailto:")) return;
-
-    // Skip JavaScript links (just in case)
+    // js links
     if (href.startsWith("javascript:")) return;
 
-    // Detect external: begins with http AND not your own domain
-    const isExternal = href.startsWith("http");
-
-    if (isExternal) {
+    // treat absolute http or https as external
+    if (href.startsWith("http")) {
       a.setAttribute("target", "_blank");
       a.setAttribute("rel", "noopener noreferrer");
     }
   });
-});
+}
 
-document.addEventListener("DOMContentLoaded", () => {
+// keep spacer equal to nav height
+function updateNavbarSpacer() {
   const nav = document.getElementById("mainNav");
   const spacer = document.getElementById("navbar-spacer");
+  if (!nav || !spacer) return;
   spacer.style.height = nav.offsetHeight + "px";
-});
+}
 
-// Update on window resize too
-window.addEventListener("resize", () => {
+// set up or refresh scroll spy
+function setupScrollSpy() {
+  const existing = bootstrap.ScrollSpy.getInstance(document.body);
   const nav = document.getElementById("mainNav");
-  const spacer = document.getElementById("navbar-spacer");
-  spacer.style.height = nav.offsetHeight + "px";
-});
+  const offset = nav ? nav.offsetHeight : 80;
+
+  const spy =
+    existing ||
+    new bootstrap.ScrollSpy(document.body, {
+      target: "#mainNav",
+      offset: offset,
+    });
+
+  spy.refresh();
+}
+
+// single entry point that waits for DOM and sections
+async function init() {
+  // wait for DOM if needed
+  if (document.readyState === "loading") {
+    await new Promise((resolve) => document.addEventListener("DOMContentLoaded", resolve, { once: true }));
+  }
+
+  await loadSections();
+
+  // Wait for the browser to commit all dynamic innerHTML updates
+  await Promise.resolve();
+
+  // Or, for complete safety across slow rendering engines:
+  await new Promise(requestAnimationFrame);
+
+  // now that all dynamic DOM is there, do the post work
+  markExternalLinks();
+  console.log(document.querySelectorAll("a[href]").length);
+  updateNavbarSpacer();
+  setupScrollSpy();
+
+  // keep spacer correct on resize
+  window.addEventListener("resize", updateNavbarSpacer);
+}
+
+// start
+init();
