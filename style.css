@@ -23,6 +23,7 @@ h6 {
 
 h1 {
   text-decoration: underline;
+  font-size: calc(2rem + 1.5vw);
 }
 
 a:link {
@@ -45,7 +46,7 @@ a {
 }
 
 h1 {
-  margin: 2.5rem 0 1.5rem 0;
+  margin: 2rem 0 1.5rem 0;
 }
 
 /* -----------------------------------------------
@@ -268,7 +269,8 @@ footer {
 }
 
 .shadow-depth {
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(20, 131, 120, 0.35) !important;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(20, 131, 120, 0.35) !important;
 }
 
 /* -----------------------------------------------

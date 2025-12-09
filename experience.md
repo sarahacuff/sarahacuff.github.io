@@ -1,15 +1,14 @@
 # Experience
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, expedita nulla. Aut, nulla modi aperiam sit perspiciatis, earum explicabo animi dolor asperiores quam consectetur totam consequatur quisquam repudiandae itaque accusamus.
+The majority of my clinical assignments were spent at Moses-Cone with additional time spent at Alamance Regional Hospital. My Community Health clinical experience was spent in a congregational nursing setting at Freedom’s Hope (a day center for unhoused and housing insecure residents) and the Salvation Army, both in Burlington, NC. And my final capstone introduced me to high acuity surgical patients and was completed under a preceptorship at UNC’s Cardiothoracic Critical Care Unit.
 
-## Southeast Regional Field Organizer Fellowship, Real Food Challenge
+#### My clinical experiences and total hours are listed below:
 
-### Chapel Hill, North Carolina — 2011 \- 2012
-
-Participated in the Regional Field Organizer Fellowship with class of 2012, which included a kickoff organizing bootcamp with campaign staff in Boston, MA. Worked closely with partner RFO to develop strategic campaign support for active and developing campuses across the southeast. Co-facilitated workshop at first national RFC Breaking Ground conference in Santa Cruz, CA. Traveled to Blacksburg, VA to present workshop at the Appalachian Food and Agriculture Summit. Focused on organizing strategies and challenges unique to schools in the southeast. Participated in coalition building events at UNC among environmental and socially progressive organizations and provided logistical support for Food Week in April 2012 hosted by FLO (Fair, Local, Organic) Food.
-
-#### **Accomplishments**
-
-- Provided regular assistance and campaign support to 6 colleges in the Southeast
-- Co-planned a regional leadership summit and organizing training for students from 10 colleges in the southeast
-- Supported local campaign at UNC and secured a meeting with then-Chancellor Holden Thorpe
+Cone Health Moses Cone Hospital, 2W Unit – 90 hrs (Fundamentals and Assessment Nursing) Fall 2024  
+Cone Health Alamance Regional Medical Center, 2C Unit – 80 hrs (Medical-Surgical Adult Health) Spring 2025  
+UNC Hospitals Youth Behavioral Hospital \- 40 hrs (Mental Health) Spring 2025  
+Cone Health Moses Cone Hospital, 6M Unit – 40 hrs (Pediatrics) Spring 2025  
+Freedom’s Hope and the Salvation Army, Burlington, NC – 40 hrs (Population and Community Health) Summer 2025  
+Cone Health Women and Children’s Center – (2S, 3S Units, Floors 4 & 5\) – 40 hrs (NICU, L\&D, & Mother/Baby) Fall 2025  
+Cone Health Moses Cone Hospital, 4E CV and 2C CV Units – 80 hrs (Medical-Surgical Adult Health) Fall 2025  
+_UNC Medical Center, Cardiothoracic Critical Care Unit – 130 hrs (Preceptorship)_ November 2025

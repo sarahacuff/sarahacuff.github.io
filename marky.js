@@ -41,7 +41,8 @@ export async function renderSlideshow(sectionId) {
   // Load the image list
   const data = await fetch("photos-index.json").then((r) => r.json());
   const images = data.photos;
-  if (!images || images.length === 0) return { html_slideshow: "", setup: () => {} };
+  if (!images || images.length === 0)
+    return { html_slideshow: "", setup: () => {} };
 
   // Build HTML string (not applied to DOM)
   const html_slideshow = `
@@ -90,7 +91,7 @@ export async function renderMarkdown(sectionId, markdownUrl) {
   if (sectionId == "photography") {
     const { html_slideshow, setup } = await renderSlideshow(sectionId);
     section.innerHTML = `
-      <div class="container py-5">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1>${title}</h1>
@@ -107,7 +108,7 @@ export async function renderMarkdown(sectionId, markdownUrl) {
   // CASE 1: No image → simple layout
   if (!imgToken) {
     section.innerHTML = `
-      <div class="container py-5">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1>${title}</h1>
@@ -134,7 +135,7 @@ export async function renderMarkdown(sectionId, markdownUrl) {
   //
   if (isLeft) {
     section.innerHTML = `
-      <div class="container py-5">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1>${title}</h1>
@@ -160,7 +161,7 @@ export async function renderMarkdown(sectionId, markdownUrl) {
   //
   if (isRight || (!isLeft && !isRight)) {
     section.innerHTML = `
-      <div class="container py-5">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1>${title}</h1>

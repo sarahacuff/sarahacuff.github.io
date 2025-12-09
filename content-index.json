@@ -1,12 +1,11 @@
 {
   "sections": [
-    "about.md"
-  ],
-  "sections_new": [
-    "about.md",
-    "statement.md",
-    "experience.md",
-    "photography.md",
-    "personal.md"
+    "About.md",
+    "Personal Statement.md",
+    "Experience.md",
+    "Professional Plan.md",
+    "Academic Projects.md",
+    "In Action.md",
+    ""
   ]
 }

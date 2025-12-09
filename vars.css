@@ -284,8 +284,8 @@
   --color-sunlight: #f7f06d;
   --color-amber: #ffb140;
 
-  --header-font: "AptosNarrow", "Aptos", "AvenirLTStd", sans-serif;
-  --navbar-font: "AptosNarrow", "Aptos", "AvenirLTStd", sans-serif;
+  --header-font: "AvenirLTStd-Roman", "Aptos", "AvenirLTStd", sans-serif;
+  --navbar-font: "AvenirLTStd-Roman", "Aptos", "AvenirLTStd", sans-serif;
   --body-font: "Helvetica", sans-serif;
 
   --header-color: #454235;
