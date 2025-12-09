@@ -43,7 +43,7 @@ function markExternalLinks() {
     if (href.startsWith("javascript:")) return;
 
     // treat absolute http or https as external
-    if (href.startsWith("http")) {
+    if (href.startsWith("http") || href.startsWith("docs")) {
       a.setAttribute("target", "_blank");
       a.setAttribute("rel", "noopener noreferrer");
     }
@@ -81,17 +81,11 @@ async function init() {
     await new Promise((resolve) => document.addEventListener("DOMContentLoaded", resolve, { once: true }));
   }
 
+  // now DOM exists, build sections
   await loadSections();
-
-  // Wait for the browser to commit all dynamic innerHTML updates
-  await Promise.resolve();
-
-  // Or, for complete safety across slow rendering engines:
-  await new Promise(requestAnimationFrame);
 
   // now that all dynamic DOM is there, do the post work
   markExternalLinks();
-  console.log(document.querySelectorAll("a[href]").length);
   updateNavbarSpacer();
   setupScrollSpy();
 
