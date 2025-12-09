@@ -23,6 +23,15 @@ async function loadSections() {
     li.classList.add("nav-item");
     li.innerHTML = `<a class="nav-link" href="#${sectionId}">${sectionLabel}</a>`;
     navList.appendChild(li);
+  }
+
+  for (const file of index.sections) {
+    const sectionLabel = file.replace(".md", "");
+    const sectionId = sectionLabel
+      .replace(".md", "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
     // this does not return until the section HTML is inserted
     await renderMarkdown(sectionId, file);
