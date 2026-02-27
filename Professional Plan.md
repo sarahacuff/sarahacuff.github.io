@@ -6,4 +6,4 @@ I will continue to teach wilderness first aid and wilderness first responder cou
 
 Eventually, I’d like to serve in some form of emergency preparedness role on a hospital committee or contribute to staff training for environmental disasters.
 
-Looking ahead to addtional schooling, it's possible that I will pursue further education in the form of a Masters of Education specializing in Health Professions or a DNP program.
+Looking ahead to further education, it's possible that I will pursue a Masters of Education specializing in Health Professions to expand upon my teaching background. I am also considering additional post-professional nursing education in a DNP program focusing on critical care.
