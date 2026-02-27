@@ -12,3 +12,5 @@ The majority of my clinical assignments were spent at Moses–Cone with addition
 - **Cone Health Women and Children’s Center – (2S, 3S Units, Floors 4 & 5\)** – 40 hrs (NICU, L\&D, & Mother/Baby) – _Fall 2025_
 - **Cone Health Moses Cone Hospital, 4E CV and 2C CV Units** – 80 hrs (Medical–Surgical Adult Health) – _Fall 2025_
 - **UNC Medical Center, Cardiothoracic Critical Care Unit** – 130 hrs (Preceptorship) – _November 2025_
+
+My skill check-offs included patient assesment, medication administration, IV insertion, NG tube placement, foley catheter insertion, tracheostomy care, and central line dressing changes.
