@@ -1,4 +1,4 @@
-# Experience
+# School Experience
 
 The majority of my clinical assignments were spent at Moses–Cone with additional time spent at Alamance Regional Hospital. My Community Health clinical experience was spent in a congregational nursing setting at Freedom’s Hope (a day center for unhoused and housing insecure residents) and the Salvation Army, both in Burlington, NC. And my final capstone introduced me to high acuity surgical patients and was completed under a preceptorship at UNC’s Cardiothoracic Critical Care Unit.
 
@@ -13,4 +13,5 @@ The majority of my clinical assignments were spent at Moses–Cone with addition
 - **Cone Health Moses Cone Hospital, 4E CV and 2C CV Units** – 80 hrs (Medical–Surgical Adult Health) – _Fall 2025_
 - **UNC Medical Center, Cardiothoracic Critical Care Unit** – 130 hrs (Preceptorship) – _November 2025_
 
-My skill check-offs included patient assesment, medication administration, IV insertion, NG tube placement, foley catheter insertion, tracheostomy care, and central line dressing changes.
+My skill check-offs included patient assessment, medication administration, IV insertion, NG tube placement, foley catheter insertion, tracheostomy care, and central line dressing changes.
+During my preceptorship, I received specailized ICU training on ABG collection, A-line removal, Swan-Ganz catheter use for hemodynamic monitoring, and attended an in-service for the VitalGo Total Lift Bed.
