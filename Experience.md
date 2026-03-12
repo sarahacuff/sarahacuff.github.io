@@ -15,3 +15,16 @@ The majority of my clinical assignments were spent at Moses–Cone with addition
 
 My skill check-offs included patient assessment, medication administration, IV insertion, NG tube placement, foley catheter insertion, tracheostomy care, and central line dressing changes.
 During my preceptorship, I received specailized ICU training on ABG collection, A-line removal, Swan-Ganz catheter use for hemodynamic monitoring, and attended an in-service for the VitalGo Total Lift Bed.
+[def]: docs/SarahAcuffWildernessCerts.pdf
+
+# Professional Background
+
+I maintain a [Wilderness First Responder](docs/SarahAcuffWildernessCerts.pdf), BLS CPR certification and epinephrine autoinjector certification for my teaching role with NOLS Wilderness Medicine. And I've attended annual continuing education sessions since 2018 during our faculty summit. These sessions include:
+
+- 2025: Travel Medicine (Dr. David Schlim), Field Water Treatment: Assuring potable water for wilderness, international travel, disaster and humanitarian aid (Dr. Howard Backer), Frostbite and Non-Freezing Cold Injuries (Dr. TJ Hartridge), Exertional Heat Illness in Wilderness Travelers and Athletes (Dr. Howard Backer)
+- 2024: Building Climate Change Resilience in the Outdoor Industry (Shana Tartar, FAWM), Wilderness Dermatology (Dr. Afton Cobb), Risk Management at NOLS (Katie Baum Mettinbrink), What's Up? Altitude Updates (Dr. Luanne Freer)
+- 2023: Snakebites and Toxicology (Mike Cardwell), Person First Language and Updated Gender Statistics (Jo Rolls, PA)
+- 2022: Blister Best Practices (Tod Schimelpfenig, FAWM), What actually is a Theory? (Mike Zawalski, PhD), Calling In and Calling Out: How to interrupt inappropriate behavior, jokes, and microagressions (Jo Rolls, PA)
+- 2021: Medical-Legal Considerations (Ben Tettlebaum, JD), Zoonotic and Vector-Borne Diseases (Laura Hudecek, PA), Cultural Humility in Medical Education (Sahaj Khalsa, NRP)
+- 2019: Sports Medicine and Concussion Management in the Austere Setting (Dr. Tim Partridge), Culture of Feedback (David Craig, MS.Ed.), Risk and Recovery (Dave Repsher, RN), Stress Injury Updates (Laura McGladrey, PMHNP), Eye Injury and Illness (Dr. Tracy Cushing), Heat, Hydration, and Endurance (Liza Howard, W-EMT), Short Talk: Geriatrics (Jim Hutchinson, PA), Short Talk: Epistaxis (Dave Braun, PA) Short Talk: Shock (Fil Sanna)
+- 2018: How to Teach: Stress Injury and Psychological First Aid (Laura McGladrey, PMHNP), Gender and Medicine 2.0 (Jo Rolls, PA), Burns and Frostbite (Dr. Anne Wagner), The Outlier Population (Danny Armanino, PhD), Spine Injury Assessment (Dr. Matt Staufer), Asthma and Hyperventilation (Dr. Matt Staufer) Leave No Trace and Wilderness Medicine (Justin Padgett, NRP)
