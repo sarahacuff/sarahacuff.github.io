@@ -15,7 +15,6 @@ export async function renderSlideshow(sectionId, jsonFile) {
           <div class="slideshow-image-wrapper">
             <img id="${sectionId}-img" src="${images[0]}" class="slideshow-image shadow-depth">
           </div>
-
           <button class="slide-btn left" id="${sectionId}-prev">&#10094;</button>
           <button class="slide-btn right" id="${sectionId}-next">&#10095;</button>
         </div>

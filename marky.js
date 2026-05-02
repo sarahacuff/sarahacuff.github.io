@@ -41,7 +41,8 @@ export async function renderSlideshow(sectionId) {
   // Load the image list
   const data = await fetch("photos-index.json").then((r) => r.json());
   const images = data.photos;
-  if (!images || images.length === 0) return { html_slideshow: "", setup: () => {} };
+  if (!images || images.length === 0)
+    return { html_slideshow: "", setup: () => {} };
 
   // Build HTML string (not applied to DOM)
   const html_slideshow = `
@@ -87,7 +88,7 @@ export async function renderMarkdown(sectionId, markdownUrl) {
 
   const { title, imgToken, html } = await parseMarkdown(markdownUrl);
 
-  if (sectionId == "photography") {
+  if (sectionId == "experience") {
     const { html_slideshow, setup } = await renderSlideshow(sectionId);
     section.innerHTML = `
       <div class="container">
