@@ -18,7 +18,7 @@ During my preceptorship, I received specailized ICU training on ABG collection, 
 
 [def]: docs/SarahAcuffWildernessCerts.pdf
 
-# Professional Background
+### Professional Background
 
 I maintain a [Wilderness First Responder](docs/SarahAcuffWildernessCerts.pdf), BLS CPR certification and epinephrine autoinjector certification for my teaching role with NOLS Wilderness Medicine. And I've attended annual continuing education sessions since 2018 during our faculty summit. These sessions include:
 
@@ -30,6 +30,6 @@ I maintain a [Wilderness First Responder](docs/SarahAcuffWildernessCerts.pdf), B
 - 2019: Sports Medicine and Concussion Management in the Austere Setting (Dr. Tim Partridge), Culture of Feedback (David Craig, MS.Ed.), Risk and Recovery (Dave Repsher, RN), Stress Injury Updates (Laura McGladrey, PMHNP), Eye Injury and Illness (Dr. Tracy Cushing), Heat, Hydration, and Endurance (Liza Howard, W-EMT), Short Talk: Geriatrics (Jim Hutchinson, PA), Short Talk: Epistaxis (Dave Braun, PA) Short Talk: Shock (Fil Sanna)
 - 2018: How to Teach: Stress Injury and Psychological First Aid (Laura McGladrey, PMHNP), Gender and Medicine 2.0 (Jo Rolls, PA), Burns and Frostbite (Dr. Anne Wagner), The Outlier Population (Danny Armanino, PhD), Spine Injury Assessment (Dr. Matt Staufer), Asthma and Hyperventilation (Dr. Matt Staufer) Leave No Trace and Wilderness Medicine (Justin Padgett, NRP)
 
-# Community Involvement
+### Community Involvement
 
-# Documentation
+#### Documentation
